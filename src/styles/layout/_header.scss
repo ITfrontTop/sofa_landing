@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as v;
+
+@forward '../components/search';
+@forward '../components/navigation';
+
+.header {
+  &__search {
+  }
+}
