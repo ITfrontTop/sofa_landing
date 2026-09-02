@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+
+.card {
+  width: 146px;
+  height: 146px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100px;
+  border: 1px solid v.$color_white;
+
+  background-color: v.$color_light_brown;
+
+  backdrop-filter: blur(42px);
+  box-shadow:
+    0 4px 9px 0 rgba(0, 0, 0, 0.1),
+    0 16px 16px 0 rgba(0, 0, 0, 0.09),
+    0 36px 22px 0 rgba(0, 0, 0, 0.05),
+    0 65px 26px 0 rgba(0, 0, 0, 0.01),
+    0 101px 28px 0 rgba(0, 0, 0, 0);
+
+  &__icon {
+    width: 62px;
+    height: 67px;
+
+    stroke: v.$color_deep_gray;
+  }
+}
