@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as v;
+
+.delivery {
+  border-radius: 100px;
+  border: 1px solid v.$color_white;
+
+  background-color: v.$color_light_brown;
+
+  box-shadow:
+    0 13px 30px 0 rgba(0, 0, 0, 0.1),
+    0 54px 54px 0 rgba(0, 0, 0, 0.09),
+    0 121px 73px 0 rgba(0, 0, 0, 0.05),
+    0 216px 86px 0 rgba(0, 0, 0, 0.01),
+    0 337px 94px 0 rgba(0, 0, 0, 0);
+
+  &__form {
+    padding: 37px 64px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__input {
+    width: 260px;
+    height: 72px;
+
+    font-size: 35px;
+    color: v.$color_black;
+    opacity: 0.6;
+
+    background-color: v.$color_light_brown;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: v.$color_black;
+      opacity: 0.6;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__icon {
+    width: 68px;
+    height: 68px;
+
+    stroke: v.$color_deep_gray;
+  }
+}

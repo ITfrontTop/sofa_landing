@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as v;
+
+@forward '../components/search';
+@forward '../components/navigation';
+@forward '../components/delivery';
+@forward '../components/card';
+
+.header {
+  &__wrapper {
+    padding: 131px 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+  }
+}

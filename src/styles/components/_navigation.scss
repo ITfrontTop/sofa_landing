@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+
+.nav {
+  width: fit-content;
+
+  padding: 15px 24px;
+
+  border-radius: 100px;
+  border: 1px solid v.$color_white;
+
+  background-color: v.$color_nav_bg;
+  backdrop-filter: blur(42px);
+  box-shadow:
+    0 31px 69px 0 rgba(0, 0, 0, 0.1),
+    0 125px 125px 0 rgba(0, 0, 0, 0.09),
+    0 282px 169px 0 rgba(0, 0, 0, 0.05),
+    -1px 501px 200px 0 rgba(0, 0, 0, 0.01),
+    -1px 782px 219px 0 rgba(0, 0, 0, 0);
+
+  &__list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &__item {
+    padding: 38px 100px;
+    font-size: 35px;
+    color: v.$color_black;
+    opacity: 0.6;
+    border-radius: 100px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: v.$color_light_brown;
+      opacity: 1;
+    }
+  }
+}
