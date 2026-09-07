@@ -1,9 +1,11 @@
 @use '../abstracts/variables' as v;
 
 .search {
-  width: fit-content;
+  // width: fit-content;
 
-  border-radius: 100px;
+  // border-radius: 100px;
+  border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+
   border: 1px solid v.$color_white;
 
   background-color: v.$color_light_brown;
@@ -15,19 +17,28 @@
     -1px 549px 154px 0 rgba(0, 0, 0, 0);
 
   &__form {
-    padding: 37px 61px 37px 81px;
+    // padding: 37px 61px 37px 81px;
+    padding: clamp(13px, calc(10.818px + 0.682vw), 37px)
+      clamp(21px, calc(17.364px + 1.136vw), 61px)
+      clamp(13px, calc(10.818px + 0.682vw), 37px)
+      clamp(28px, calc(23.182px + 1.506vw), 81px);
 
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 91px;
+    // gap: 91px;
+    gap: clamp(32px, calc(26.636px + 1.676vw), 91px);
   }
 
   &__input {
-    width: 489px;
-    height: 72px;
+    // width: 489px;
+    // height: 72px;
+    width: clamp(100px, calc(64.636px + 11.051vw), 489px);
+    height: clamp(25px, calc(20.727px + 1.335vw), 72px);
 
-    font-size: 35px;
+    // font-size: 35px;
+    font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+
     color: v.$color_black;
     opacity: 0.6;
 
@@ -48,7 +59,9 @@
 
   &__btn-icon {
     stroke: v.$color_deep_gray;
-    width: 61px;
-    height: 61px;
+    // width: 61px;
+    // height: 61px;
+    width: clamp(20px, calc(16.273px + 1.165vw), 61px);
+    height: clamp(20px, calc(16.273px + 1.165vw), 61px);
   }
 }
