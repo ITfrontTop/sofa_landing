@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sofa</title>
 
@@ -14,37 +14,41 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="search">
-            <form class="search__form" action="#">
-              <input
-                class="search__input"
-                type="search"
-                name="searchName"
-                placeholder="Brown leather Sofa"
-              />
-              <button class="search__btn" type="submit">
-                <svg class="search__btn-icon">
-                  <use href="./src/assets/icons/sprite.svg#search-icon"></use>
-                </svg>
-              </button>
-            </form>
+          <div class="header__search">
+            <div class="search">
+              <form class="search__form" action="#">
+                <input
+                  class="search__input"
+                  type="search"
+                  name="searchName"
+                  placeholder="Brown leather Sofa"
+                />
+                <button class="search__btn" type="submit">
+                  <svg class="search__btn-icon">
+                    <use href="./src/assets/icons/sprite.svg#search-icon"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">Home</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">Sofas</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">Visualizer</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">Us</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="header__nav">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Sofas</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Visualizer</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="header__box">
             <div class="delivery">
               <form class="delivery__form" action="#">

@@ -1,14 +1,17 @@
 @use '../abstracts/variables' as v;
 
 .card {
-  width: 146px;
-  height: 146px;
+  // width: 146px;
+  // height: 146px;
+  width: clamp(52px, calc(43.455px + 2.67vw), 146px);
+  height: clamp(52px, calc(43.455px + 2.67vw), 146px);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-radius: 100px;
+  // border-radius: 100px;
+  border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
   border: 1px solid v.$color_white;
 
   background-color: v.$color_light_brown;
@@ -22,8 +25,10 @@
     0 101px 28px 0 rgba(0, 0, 0, 0);
 
   &__icon {
-    width: 62px;
-    height: 67px;
+    // width: 62px;
+    // height: 67px;
+    width: clamp(22px, calc(18.364px + 1.136vw), 62px);
+    height: clamp(23px, calc(19px + 1.25vw), 67px);
 
     stroke: v.$color_deep_gray;
   }
