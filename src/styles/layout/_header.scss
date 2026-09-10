@@ -8,10 +8,20 @@
 .header {
   &__wrapper {
     // padding: 131px 0;
-    padding: clamp(46px, calc(38.273px + 2.415vw), 131px) 0;
+    padding: clamp(46px, calc(38.273px + 2.415vw), 131px) 20px;
 
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
+    max-width: 3480px;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 999;
   }
 
   &__box {

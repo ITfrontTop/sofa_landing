@@ -3,7 +3,7 @@
 .delivery {
   // border-radius: 100px;
   border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
-  border: 1px solid v.$color_white;
+  border: 2px solid v.$color_white;
 
   background-color: v.$color_light_brown;
 
@@ -51,6 +51,8 @@
   &__btn {
     background-color: transparent;
     border: none;
+
+    cursor: pointer;
   }
 
   &__icon {
