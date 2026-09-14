@@ -4,7 +4,8 @@
   // width: fit-content;
 
   // border-radius: 100px;
-  border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+  // border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+  border-radius: clamp(14px, calc(3.212px + 2.521vw), 100px);
 
   border: 2px solid v.$color_white;
 
@@ -18,26 +19,34 @@
 
   &__form {
     // padding: 37px 61px 37px 81px;
-    padding: clamp(13px, calc(10.818px + 0.682vw), 37px)
-      clamp(21px, calc(17.364px + 1.136vw), 61px)
-      clamp(13px, calc(10.818px + 0.682vw), 37px)
-      clamp(28px, calc(23.182px + 1.506vw), 81px);
+    // padding: clamp(13px, calc(10.818px + 0.682vw), 37px)
+    //   clamp(21px, calc(17.364px + 1.136vw), 61px)
+    //   clamp(13px, calc(10.818px + 0.682vw), 37px)
+    //   clamp(28px, calc(23.182px + 1.506vw), 81px);
+    padding: clamp(6px, calc(2.111px + 0.909vw), 37px)
+      clamp(8px, calc(1.352px + 1.553vw), 61px)
+      clamp(6px, calc(2.111px + 0.909vw), 37px)
+      clamp(11px, calc(2.219px + 2.052vw), 81px);
 
     display: flex;
     justify-content: start;
     align-items: center;
     // gap: 91px;
-    gap: clamp(32px, calc(26.636px + 1.676vw), 91px);
+    // gap: clamp(32px, calc(26.636px + 1.676vw), 91px);
+    gap: clamp(13px, calc(3.216px + 2.286vw), 91px);
   }
 
   &__input {
     // width: 489px;
     // height: 72px;
-    width: clamp(100px, calc(64.636px + 11.051vw), 489px);
-    height: clamp(25px, calc(20.727px + 1.335vw), 72px);
+    // width: clamp(100px, calc(64.636px + 11.051vw), 489px);
+    // height: clamp(25px, calc(20.727px + 1.335vw), 72px);
+    width: clamp(69px, calc(16.315px + 12.309vw), 489px);
+    height: clamp(10px, calc(2.223px + 1.817vw), 72px);
 
     // font-size: 35px;
-    font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+    // font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+    font-size: clamp(5px, calc(1.237px + 0.879vw), 35px);
 
     color: v.$color_black;
     opacity: 0.6;
@@ -53,6 +62,10 @@
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: transparent;
     border: none;
 
@@ -63,7 +76,9 @@
     stroke: v.$color_deep_gray;
     // width: 61px;
     // height: 61px;
-    width: clamp(20px, calc(16.273px + 1.165vw), 61px);
-    height: clamp(20px, calc(16.273px + 1.165vw), 61px);
+    // width: clamp(20px, calc(16.273px + 1.165vw), 61px);
+    // height: clamp(20px, calc(16.273px + 1.165vw), 61px);
+    width: clamp(8px, calc(1.352px + 1.553vw), 61px);
+    height: clamp(8px, calc(1.352px + 1.553vw), 61px);
   }
 }

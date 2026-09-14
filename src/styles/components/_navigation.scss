@@ -4,11 +4,14 @@
   // width: fit-content;
 
   // padding: 15px 24px;
-  padding: clamp(5px, calc(4.091px + 0.284vw), 15px)
-    clamp(8px, calc(6.545px + 0.455vw), 24px);
+  // padding: clamp(5px, calc(4.091px + 0.284vw), 15px)
+  //   clamp(8px, calc(6.545px + 0.455vw), 24px);
+  padding: clamp(2px, calc(0.369px + 0.381vw), 15px)
+    clamp(3px, calc(0.366px + 0.615vw), 24px);
 
   // border-radius: 100px;
-  border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+  // border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+  border-radius: clamp(14px, calc(3.212px + 2.521vw), 100px);
   border: 2px solid v.$color_white;
 
   background-color: v.$color_nav_bg;
@@ -25,21 +28,26 @@
     justify-content: start;
     align-items: center;
     // gap: 26px;
-    gap: clamp(10px, calc(8.545px + 0.455vw), 26px);
+    // gap: clamp(10px, calc(8.545px + 0.455vw), 26px);
+    gap: clamp(3px, calc(0.115px + 0.674vw), 26px);
   }
 
   &__item {
     // padding: 38px 100px;
-    padding: clamp(13px, calc(10.727px + 0.71vw), 38px)
-      clamp(35px, calc(29.091px + 1.847vw), 100px);
+    // padding: clamp(13px, calc(10.727px + 0.71vw), 38px)
+    //   clamp(35px, calc(29.091px + 1.847vw), 100px);
+    padding: clamp(7px, calc(3.111px + 0.909vw), 38px)
+      clamp(14px, calc(3.212px + 2.521vw), 100px);
 
     // font-size: 35px;
-    font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+    // font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+    font-size: clamp(5px, calc(1.237px + 0.879vw), 35px);
 
     color: v.$color_black;
     opacity: 0.6;
     // border-radius: 100px;
-    border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+    // border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+    border-radius: clamp(14px, calc(3.212px + 2.521vw), 100px);
     transition: all 0.2s linear;
 
     &:hover {

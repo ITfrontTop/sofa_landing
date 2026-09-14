@@ -1,17 +1,29 @@
 @use '../abstracts/variables' as v;
 
 .hero {
+  /* поменял высоту на vh */
+  // height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__wrapper {
+    flex-grow: 1;
+
     // height: 1485px;
-    height: clamp(530px, calc(443.182px + 27.131vw), 1485px);
+    // height: clamp(530px, calc(443.182px + 27.131vw), 1485px);
 
     background: url('../../assets/images/webp/home-bg.webp') center/cover
       no-repeat;
   }
 
   &__info-inner {
+    /* поменял высоту на vh */
+    height: 80vh;
+
     // height: 1485px;
-    height: clamp(530px, calc(443.182px + 27.131vw), 1485px);
+    // height: clamp(530px, calc(443.182px + 27.131vw), 1485px);
 
     display: flex;
     flex-direction: column;
@@ -23,23 +35,29 @@
 
   &__info {
     // padding: 25px 100px;
-    padding: clamp(8px, calc(6.455px + 0.483vw), 25px)
-      clamp(35px, calc(29.091px + 1.847vw), 100px);
+    // padding: clamp(8px, calc(6.455px + 0.483vw), 25px)
+    //   clamp(35px, calc(29.091px + 1.847vw), 100px);
+    padding: clamp(3px, calc(1px + 0.625vw), 25px)
+      clamp(14px, calc(6.182px + 2.443vw), 100px);
 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     // bottom: -35px;
-    bottom: clamp(-12px, calc(9.909px + 0.653vw), -35px);
+    // bottom: clamp(-12px, calc(9.909px + 0.653vw), -35px);
+    bottom: clamp(-5px, calc(2.273px + 0.852vw), -35px);
 
     display: flex;
     justify-content: center;
     align-items: center;
     // gap: 100px;
-    gap: clamp(35px, calc(29.091px + 1.847vw), 100px);
+    // gap: clamp(35px, calc(29.091px + 1.847vw), 100px);
+    gap: clamp(14px, calc(6.182px + 2.443vw), 100px);
 
     // border-radius: 100px;
-    border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+    // border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+    border-radius: clamp(14px, calc(6.182px + 2.443vw), 100px);
+
     border: 2px solid v.$color_white;
 
     box-shadow:
@@ -50,8 +68,10 @@
 
     background: v.$color_light_brown;
 
-    @media (max-width: v.$media_4k) {
-      flex-direction: column;
+    @media (max-width: v.$media_md) {
+      // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! начать !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      flex-wrap: wrap;
+      // gap: 5px;
     }
   }
 
@@ -60,22 +80,26 @@
     justify-content: center;
     align-items: center;
     // gap: 35px;
-    gap: clamp(12px, calc(9.909px + 0.653vw), 35px);
+    // gap: clamp(12px, calc(9.909px + 0.653vw), 35px);
+    gap: clamp(2px, calc(-1px + 0.938vw), 35px);
   }
 
   &__info-item-text {
     // width: 700px;
-    width: clamp(250px, calc(209.091px + 12.784vw), 700px);
+    // width: clamp(250px, calc(209.091px + 12.784vw), 700px);
+    width: clamp(100px, calc(45.455px + 17.045vw), 700px);
 
     // font-size: 40px;
-    font-size: clamp(14px, calc(11.636px + 0.739vw), 40px);
+    // font-size: clamp(10px, calc(7.273px + 0.852vw), 40px);
+    font-size: clamp(5px, calc(1.818px + 0.994vw), 40px);
     color: v.$color_black;
     opacity: 0.6;
   }
 
   &__title {
     // font-size: 300px;
-    font-size: clamp(50px, calc(27.273px + 7.102vw), 300px);
+    // font-size: clamp(50px, calc(27.273px + 7.102vw), 300px);
+    font-size: clamp(42px, calc(18.545px + 7.33vw), 300px);
     font-weight: 700;
     max-width: 1900px;
     line-height: 80%;
@@ -86,8 +110,11 @@
 
   &__desc {
     // padding: 100px 0 118px;
-    padding: clamp(35px, calc(29.091px + 1.847vw), 100px) 0
-      clamp(42px, calc(35.091px + 2.159vw), 118px);
+    // padding: clamp(35px, calc(29.091px + 1.847vw), 100px) 15px
+    //   clamp(42px, calc(35.091px + 2.159vw), 118px);
+    padding: clamp(14px, calc(6.182px + 2.443vw), 100px)
+      clamp(5px, calc(4.091px + 0.284vw), 15px)
+      clamp(16px, calc(6.727px + 2.898vw), 118px);
 
     text-align: center;
 
@@ -95,7 +122,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: clamp(11px, calc(9.091px + 0.597vw), 32px);
+    gap: 32px;
+    // gap: clamp(11px, calc(9.091px + 0.597vw), 32px);
+    gap: clamp(4px, calc(1.455px + 0.795vw), 32px);
 
     background: linear-gradient(
       90deg,
@@ -106,7 +135,8 @@
 
   &__desc-title {
     // font-size: 80px;
-    font-size: clamp(20px, calc(14.545px + 1.705vw), 80px);
+    // font-size: clamp(12px, calc(5.818px + 1.932vw), 80px);
+    font-size: clamp(11px, calc(4.727px + 1.96vw), 80px);
     font-weight: 500;
     letter-spacing: -0.05em;
   }
@@ -114,7 +144,8 @@
   &__desc-text {
     font-size: v.$font-instrument;
     // font-size: 35px;
-    font-size: clamp(12px, calc(9.909px + 0.653vw), 35px);
+    // font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+    font-size: clamp(5px, calc(2.273px + 0.852vw), 35px);
   }
 
   &__desc-title,
@@ -125,8 +156,11 @@
   &__icon {
     // width: 150px;
     // height: 150px;
-    width: clamp(53px, calc(44.182px + 2.756vw), 150px);
-    height: clamp(53px, calc(44.182px + 2.756vw), 150px);
+    // width: clamp(53px, calc(44.182px + 2.756vw), 150px);
+    // height: clamp(53px, calc(44.182px + 2.756vw), 150px);
+    width: clamp(21px, calc(9.273px + 3.665vw), 150px);
+    height: clamp(21px, calc(9.273px + 3.665vw), 150px);
+
     fill: v.$color_black;
     opacity: 0.6;
   }

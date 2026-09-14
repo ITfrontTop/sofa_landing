@@ -2,7 +2,8 @@
 
 .delivery {
   // border-radius: 100px;
-  border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+  // border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+  border-radius: clamp(14px, calc(3.212px + 2.521vw), 100px);
   border: 2px solid v.$color_white;
 
   background-color: v.$color_light_brown;
@@ -16,24 +17,30 @@
 
   &__form {
     // padding: 37px 64px;
-    padding: clamp(13px, calc(10.818px + 0.682vw), 37px)
-      clamp(22px, calc(18.182px + 1.193vw), 64px);
+    // padding: clamp(13px, calc(10.818px + 0.682vw), 37px)
+    //   clamp(22px, calc(18.182px + 1.193vw), 64px);
+    padding: clamp(5px, calc(0.986px + 0.938vw), 37px)
+      clamp(9px, calc(2.101px + 1.612vw), 64px);
 
     display: flex;
     justify-content: center;
     align-items: center;
     // gap: 35px;
-    gap: clamp(12px, calc(9.909px + 0.653vw), 35px);
+    // gap: clamp(12px, calc(9.909px + 0.653vw), 35px);
+    gap: clamp(5px, calc(1.237px + 0.879vw), 35px);
   }
 
   &__input {
     // width: 260px;
-    width: clamp(100px, calc(85.455px + 4.545vw), 260px);
+    // width: clamp(100px, calc(85.455px + 4.545vw), 260px);
+    width: clamp(37px, calc(9.027px + 6.536vw), 260px);
     // height: 72px;
-    height: clamp(25px, calc(20.727px + 1.335vw), 72px);
+    // height: clamp(25px, calc(20.727px + 1.335vw), 72px);
+    height: clamp(10px, calc(2.223px + 1.817vw), 72px);
 
     // font-size: 35px;
-    font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+    // font-size: clamp(10px, calc(7.727px + 0.71vw), 35px);
+    font-size: clamp(5px, calc(1.237px + 0.879vw), 35px);
 
     background-color: v.$color_light_brown;
     border: none;
@@ -49,6 +56,10 @@
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: transparent;
     border: none;
 
@@ -58,8 +69,10 @@
   &__icon {
     // width: 68px;
     // height: 68px;
-    width: clamp(24px, calc(20px + 1.25vw), 68px);
-    height: clamp(24px, calc(20px + 1.25vw), 68px);
+    // width: clamp(24px, calc(20px + 1.25vw), 68px);
+    // height: clamp(24px, calc(20px + 1.25vw), 68px);
+    width: clamp(9px, calc(1.599px + 1.729vw), 68px);
+    height: clamp(9px, calc(1.599px + 1.729vw), 68px);
 
     stroke: v.$color_deep_gray;
   }

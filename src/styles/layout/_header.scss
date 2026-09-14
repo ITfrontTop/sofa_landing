@@ -8,7 +8,9 @@
 .header {
   &__wrapper {
     // padding: 131px 0;
-    padding: clamp(46px, calc(38.273px + 2.415vw), 131px) 20px;
+    // padding: clamp(46px, calc(38.273px + 2.415vw), 131px) 20px;
+    padding: clamp(18px, calc(7.727px + 3.21vw), 131px)
+      clamp(5px, calc(3.636px + 0.426vw), 20px);
 
     display: flex;
     justify-content: space-between;
@@ -29,6 +31,7 @@
     justify-content: start;
     align-items: center;
     // gap: 50px;
-    gap: clamp(17px, calc(14px + 0.938vw), 50px);
+    // gap: clamp(17px, calc(14px + 0.938vw), 50px);
+    gap: clamp(7px, calc(3.091px + 1.222vw), 50px);
   }
 }
