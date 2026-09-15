@@ -34,4 +34,12 @@
     // gap: clamp(17px, calc(14px + 0.938vw), 50px);
     gap: clamp(7px, calc(3.091px + 1.222vw), 50px);
   }
+
+  &__nav {
+    position: relative;
+
+    @media (max-width: v.$media_md) {
+      order: -1;
+    }
+  }
 }
