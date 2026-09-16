@@ -81,12 +81,14 @@
 
         &::after {
           rotate: -45deg;
-          top: 50%;
+          // top: 50%;
+          top: 48%;
         }
 
         &:before {
           rotate: 45deg;
-          top: 50%;
+          // bottom: 50%;
+          bottom: 48%;
         }
       }
     }
@@ -102,12 +104,15 @@
 
     background-color: v.$color-black-opacity;
 
+    transition: all 0.3s linear;
+
     &::after,
     &:before {
       content: '';
       position: absolute;
       width: 45%;
       height: 1px;
+
       background-color: v.$color-black-opacity;
 
       transition: all 0.3s linear;
@@ -115,12 +120,10 @@
 
     &::after {
       top: clamp(5px, calc(1.818px + 0.994vw), 40px);
-      // left: 0;
     }
 
     &::before {
       bottom: clamp(5px, calc(1.818px + 0.994vw), 40px);
-      // left: 0;
     }
   }
 }
