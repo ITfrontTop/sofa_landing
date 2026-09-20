@@ -1,4 +1,4 @@
-const burgerBtn = document.querySelector('.nav__burger');
+const burgerBtn = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 
 burgerBtn.addEventListener('click', () => {
