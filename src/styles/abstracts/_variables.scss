@@ -1,5 +1,5 @@
 $color_black: #000;
-
+$color-black-opacity: rgba(0, 0, 0, 0.6);
 $color_white: #fff;
 $color_bg_white: #f1f0ee;
 $color_light_brown: #cecdca;
@@ -8,13 +8,37 @@ $color_deep_gray: #1e1e1e;
 
 $color_nav_bg: #dddcdb;
 
-// 6k 3840
-// 5k 2880
-// 4k 2160
+// 2.8
+// 7
+//
+
+// text 10px - 35px
+// subtitle 12px - adaptive;
+// title h1 20px - 300px;
+
+// $media_6k: 3840px;
+// $media_5k: 2880px;
+// $media_4k: 2160px;
+// $media_2k: 1700px;
+// $media_xxl: 1400px;
+// $media_xl: 1280 × 720;
+// $media_lg: 992px;
+// $media_md: 768px;
+// $media_sm: 576px;
+// $media_min: 428px;
+
+// font-family: 'Instrument Sans', sans-serif;
+// font-family: 'Manrope', sans-serif;
+// font-family: 'Space Grotesk', sans-serif;
+
+$font-instrument: 'Instrument Sans', sans-serif;
+$font-manrope: 'Manrope', sans-serif;
+$font-space-grotesk: 'Space Grotesk', sans-serif;
 
 $media_6k: 3840px;
 $media_5k: 2880px;
 $media_4k: 2160px;
+$media_2k: 1700px;
 $media_xxl: 1400px;
 $media_xl: 1200px;
 $media_lg: 992px;

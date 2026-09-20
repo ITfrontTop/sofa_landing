@@ -3,16 +3,23 @@
 .card {
   // width: 146px;
   // height: 146px;
-  width: clamp(52px, calc(43.455px + 2.67vw), 146px);
-  height: clamp(52px, calc(43.455px + 2.67vw), 146px);
+  // width: clamp(52px, calc(43.455px + 2.67vw), 146px);
+  // height: clamp(52px, calc(43.455px + 2.67vw), 146px);
+  // width: clamp(29px, calc(14.324px + 3.429vw), 146px);
+  // height: clamp(29px, calc(14.324px + 3.429vw), 146px);
+
+  padding: clamp(5px, calc(1.818px + 0.994vw), 40px)
+    clamp(6px, calc(2.636px + 1.051vw), 43px);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   // border-radius: 100px;
-  border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
-  border: 1px solid v.$color_white;
+  // border-radius: clamp(35px, calc(29.091px + 1.847vw), 100px);
+  border-radius: clamp(14px, calc(3.212px + 2.521vw), 100px);
+
+  border: 2px solid v.$color_white;
 
   background-color: v.$color_light_brown;
 
@@ -27,8 +34,10 @@
   &__icon {
     // width: 62px;
     // height: 67px;
-    width: clamp(22px, calc(18.364px + 1.136vw), 62px);
-    height: clamp(23px, calc(19px + 1.25vw), 67px);
+    // width: clamp(22px, calc(18.364px + 1.136vw), 62px);
+    // height: clamp(23px, calc(19px + 1.25vw), 67px);
+    width: clamp(8px, calc(1.226px + 1.583vw), 62px);
+    height: clamp(9px, calc(1.725px + 1.7vw), 67px);
 
     stroke: v.$color_deep_gray;
   }

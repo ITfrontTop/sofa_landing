@@ -4,14 +4,26 @@
 @forward '../components/navigation';
 @forward '../components/delivery';
 @forward '../components/card';
+@forward '../components/burger';
 
 .header {
   &__wrapper {
     // padding: 131px 0;
-    padding: clamp(46px, calc(38.273px + 2.415vw), 131px) 0;
+    padding: clamp(18px, calc(7.727px + 3.21vw), 131px)
+      clamp(5px, calc(3.636px + 0.426vw), 20px);
 
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
+    max-width: 3480px;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 999;
   }
 
   &__box {
@@ -19,6 +31,19 @@
     justify-content: start;
     align-items: center;
     // gap: 50px;
-    gap: clamp(17px, calc(14px + 0.938vw), 50px);
+    // gap: clamp(17px, calc(14px + 0.938vw), 50px);
+    gap: clamp(7px, calc(3.091px + 1.222vw), 50px);
+  }
+
+  &__nav {
+    display: flex;
+
+    @media (max-width: v.$media_md) {
+      order: -1;
+    }
+  }
+
+  &__nav-btn {
+    position: relative;
   }
 }
