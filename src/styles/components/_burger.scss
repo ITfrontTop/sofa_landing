@@ -19,6 +19,13 @@
 
   cursor: pointer;
 
+  box-shadow:
+    0 31px 69px 0 rgba(0, 0, 0, 0.1),
+    0 125px 125px 0 rgba(0, 0, 0, 0.09),
+    0 282px 169px 0 rgba(0, 0, 0, 0.05),
+    -1px 501px 200px 0 rgba(0, 0, 0, 0.01),
+    -1px 782px 219px 0 rgba(0, 0, 0, 0);
+
   &.active {
     & .burger__item {
       background-color: transparent;
